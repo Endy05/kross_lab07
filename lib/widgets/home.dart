@@ -10,6 +10,7 @@ class _V0State extends State<Home> {
   int _red = 25;
   int _green = 0;
   int _blue = 0;
+  double _opacity = 1.0;
 
   void _onChangeRed(double valueRed) {
     setState(() {
@@ -28,6 +29,7 @@ class _V0State extends State<Home> {
       _blue = valueBlue.toInt();
     });
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -96,6 +98,7 @@ class _V0State extends State<Home> {
               activeColor: Colors.blue,
               onChanged: _onChangeBlue,
             ),
+            
           ],
         ),
       ),
